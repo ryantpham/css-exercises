@@ -27,8 +27,8 @@ input {
 }
 
 /*  
-Adjustments here:
-*/
+My Adjustments here:
+
 
 .header {
   display: flex;
@@ -80,4 +80,69 @@ a{
   color: black;
   font-family: Roboto, sans-serif;
   text-decoration: none;
+}
+#/
+
+
+/* I Asked Chat GPT to clean up my hardcode to be more organized and neat*/
+
+
+/* Base styles for layout components */
+.header, .footer, .content, .alignment {
+  display: flex;
+}
+
+/* Header styles */
+.header {
+  justify-content: space-between;
+  padding: 16px 16px 3px 16px; /* Combined padding-top into one line */
+}
+
+/* Footer styles */
+.footer {
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #eeee;
+}
+
+/* Content styles */
+.content {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Alignment styles for generic flex containers */
+.alignment {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* List styling for navigation links */
+.left-links, .right-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+
+/* Specific alignment for left links in the header */
+.header > .left-links {
+  text-align: right;
+}
+
+/* List item styles */
+li {
+  display: inline;
+  margin: 5px;
+}
+
+/* Anchor tag styles */
+a {
+  color: black;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+}
+
+/* Resetting padding for footer and header divs */
+div.footer, div.header {
+  padding: 0;
 }
