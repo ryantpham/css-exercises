@@ -27,3 +27,72 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+/*My code here*/
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.sidebar {
+  padding: 16px;
+}
+
+.sidebar > * {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 300px;
+}
+
+
+
+.cardset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 32px;
+  gap: 16px;
+}
+
+.cardset > * {
+  flex-basis: 33.33333%;
+}
+
+
+
+.card {
+  padding: 10px;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+ 
+
+.layout{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li{
+  list-style: none;
+}
+a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
